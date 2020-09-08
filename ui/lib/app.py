@@ -4,6 +4,7 @@ import abc
 class App:
 
     def __init__(self,window_size):
+        self._window_size = window_size
         self._screen = pygame.Surface(window_size)
 
     def get_screen(self):
